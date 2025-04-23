@@ -31,7 +31,7 @@ const Card3 = () => {
              <div className="flex flex-col justify-center items-center">
                <motion.img 
                  whileHover={{ scale: 1.1, rotate: 5 }}
-                 className='bg-white rounded-full p-2 sm:p-3 mb-4 sm:mb-6 shadow-lg hover:shadow-white/20 transition-all duration-300 w-16 sm:w-20' 
+                 className='bg-white rounded-full p-2 md:p-3 mb-4 md:mb-6 shadow-lg hover:shadow-white/20 w-16 md:w-auto' 
                  src="/seo-icon.avif" 
                  alt="Personalized Solutions Icon" 
                />
