@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Blog Dashboard</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #f3f4f6;
+      margin: 0;
+      padding: 0;
+    }
+    .dashboard {
+      max-width: 600px;
+      margin: 80px auto;
+      background: #fff;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    h1 {
+      margin-bottom: 30px;
+      font-size: 28px;
+      color: #333;
+    }
+    .buttons {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+    .buttons a {
+      text-decoration: none;
+      padding: 12px 24px;
+      border-radius: 8px;
+      font-weight: 600;
+      font-size: 16px;
+      transition: 0.2s ease;
+    }
+    .add-btn {
+      background-color: #10b981;
+      color: white;
+    }
+    .add-btn:hover {
+      background-color: #059669;
+    }
+    .delete-btn {
+      background-color: #ef4444;
+      color: white;
+    }
+    .delete-btn:hover {
+      background-color: #dc2626;
+    }
+  </style>
+</head>
+<body>
+  <div class="dashboard">
+    <h1>Blog Dashboard</h1>
+    <div class="buttons">
+      <a href="/blogs/add" class="add-btn">➕ Add Blog</a>
+      <a href="/blogs" class="delete-btn">view all blogs</a>
+    </div>
+  </div>
+</body>
+</html>
