@@ -7,10 +7,9 @@ import adminMiddleware from "./middlewares/adminMiddleware.js";
 import cookieParser from "cookie-parser";
 
 dotenv.config();
+dbConnection();  // connect immediately
 
 const app = express();
-const SERVER = process.env.PORT;
-console.log(process.env.PORT);
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
@@ -24,7 +23,6 @@ app.use("/blogs", adminMiddleware, blogsRoutes);
 
 app.get("/dashboard", adminMiddleware, async (req, res) => {
   try {
-    // ✅ Ensure blogs is always an array
     res.render("dashboard");
   } catch (err) {
     console.error(err);
@@ -39,8 +37,4 @@ app.get("/register", (req, res) => {
   res.render("register.ejs");
 });
 
-app.listen(SERVER, () => {
-  dbConnection();
-
-  console.log("listening on port ", SERVER);
-});
+export default app;  // export the app, no app.listen()
