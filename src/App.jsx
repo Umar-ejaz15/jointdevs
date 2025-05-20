@@ -14,7 +14,7 @@ const App = () => {
     <Router>
       <div className="app">
         <main>
-          <SmoothCursor />
+          <Pointer />
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/blogs" element={<Blogs />} />
