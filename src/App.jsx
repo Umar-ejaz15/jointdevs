@@ -7,16 +7,14 @@ import Resources from "./pages/Resources";
 import Services from "./pages/Services";
 import Blog from "./pages/Blog";
 import { Pointer } from "@/components/magicui/pointer";
-import { SmoothCursor } from "./components/ui/smooth-cursor";
 
 const App = () => {
   return (
     <Router>
       <div className="app">
         <main>
-          <Pointer />
           <Routes>
-            <Route path="/" element={<Home />} />
+            {/* <Route path="/" element={<Home />} /> */}
             <Route path="/blogs" element={<Blogs />} />
             <Route path="/blog/:id" element={<Blog />} />
             <Route path="/contact" element={<Contact />} />

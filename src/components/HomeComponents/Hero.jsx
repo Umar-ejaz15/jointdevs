@@ -7,9 +7,8 @@ import { RainbowButton } from '../magicui/rainbow-button';
 
 const Hero = () => {
   return (
-    <div className="relative flex flex-col w-full min-h-screen justify-center items-center px-6 md:px-12 lg:px-20 overflow-hidden bg-black text-white">
+    <div className="relative flex flex-col w-full min-h-screen justify-center items-center px-6 md:px-12 lg:px-20 overflow-hidden bg-black text-white border-2 border-white/20">
       {/* Background Animated Grid Pattern */}
-      <AnimatedGridPattern />
 
       {/* Title */}
       <div className="flex justify-center w-full">
