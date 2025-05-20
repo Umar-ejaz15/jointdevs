@@ -253,7 +253,7 @@ export const Particles = ({
 
   return (
     <div
-      className={cn("pointer-events-none absolute", className)}
+      className={cn("pointer-events-none ", className)}
       ref={canvasContainerRef}
       aria-hidden="true"
       {...props}>

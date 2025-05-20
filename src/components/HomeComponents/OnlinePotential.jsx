@@ -19,8 +19,8 @@ const OnlinePotential = () => {
 
   return (
     <>
-      <Particles />
-      <motion.div className="flex flex-col gap-6 border border-white/20 border-t-0 justify-center items-center w-full p-4 md:p-5 bg-black">
+      <Particles className="absolute w-full h-full" />
+      <motion.div className="flex flex-col gap-6 border border-white/20 border-t-0 justify-center items-center w-full p-4 md:p-5 ">
         <motion.div
           initial={{ y: 50 }}
           whileInView={{ y: 0 }}
