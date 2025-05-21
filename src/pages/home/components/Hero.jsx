@@ -25,7 +25,7 @@ const Hero = () => {
     },
   ];
   return (
-    <div className="flex  container mx-auto flex-col md:flex-row min-h-screen items-center">
+    <div className="flex  dark:bg-zinc-950  container mx-auto flex-col md:flex-row min-h-screen items-center">
       <div className="w-full md:w-1/2 p-6 md:p-10 rounded-lg">
         <div>
           <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold tracking-tighter leading-none">
@@ -58,7 +58,7 @@ const Hero = () => {
       <div className="w-full md:w-1/2 h-full flex items-center justify-center p-6">
         <img 
           className="w-3/4 h-auto object-cover rounded-lg " 
-          src="/8.png" 
+          src="/9.png" 
           alt="Hero Image"
         />
       </div>
