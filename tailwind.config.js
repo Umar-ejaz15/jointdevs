@@ -1,0 +1,16 @@
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  darkMode: "class", // or 'media'
+  content: ["./src/**/*.{js,ts,jsx,tsx}"],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+  theme: {
+    extend: {
+      transitionProperty: {
+        all: "all",
+      },
+    },
+  },
+};
