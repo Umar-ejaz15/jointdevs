@@ -65,7 +65,7 @@ const Servicies = () => {
         </p>
         <div>
           {services.map((service,index) => (
-            <Service index={index} service={service} />
+            <Service index={service.index} service={service} />
           ))}
         </div>
       </div>

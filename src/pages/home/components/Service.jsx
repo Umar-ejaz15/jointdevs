@@ -1,4 +1,5 @@
 import React from "react";
+import LazyLoad from 'react-lazyload';
 
 const Service = ({ service, index }) => {
   const { tittle, description, image, learnMore } = service;
@@ -7,11 +8,18 @@ const Service = ({ service, index }) => {
       {index % 2 === 0 ? (
         <>
           <div className="md:w-1/2">
-            <img
-              src={image}
-              alt="Marketing Service"
-              className="w-full h-auto rounded-lg shadow-lg"
-            />
+            <LazyLoad height={300} offset={100} once>
+              <picture>
+                <source srcSet={image} type="image/webp" />
+                <img
+                  src={image}
+                  alt="Marketing Service"
+                  loading="lazy"
+                  width="100%"
+                  className="h-auto rounded-lg shadow-lg"
+                />
+              </picture>
+            </LazyLoad>
           </div>
           <div className="md:w-1/2 space-y-4">
             <h1 className="text-6xl font-bold uppercase tracking-tighter text-gray-800 dark:text-white">
@@ -33,11 +41,18 @@ const Service = ({ service, index }) => {
             </p>
           </div>
           <div className="md:w-1/2">
-            <img
-              src={image}
-              alt="Marketing Service"
-              className="w-full h-auto rounded-lg shadow-lg"
-            />
+            <LazyLoad height={300} offset={100} once>
+              <picture>
+                <source srcSet={image} type="image/webp" />
+                <img
+                  src={image}
+                  alt="Marketing Service"
+                  loading="lazy"
+                  width="100%"
+                  className="h-auto rounded-lg shadow-lg"
+                />
+              </picture>
+            </LazyLoad>
           </div>
         </>
       )}

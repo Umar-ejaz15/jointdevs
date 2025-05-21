@@ -11,7 +11,7 @@ const Navigation = () => {
     setIsMenuOpen(!isMenuOpen);
   };
   return (
-    <nav className="flex justify-between items-center h-16 bg-white text-black dark:bg-black dark:text-white relative shadow-sm font-mono px-4 w-full">
+    <nav className="flex px-10 justify-between items-center h-16 bg-white text-black dark:bg-black dark:text-white relative shadow-sm font-mono w-full">
       <h1 className="text-4xl font-bold">Techon</h1>
       <div className="flex md:hidden justify-between items-center gap-4">
         <DarkModeToggle className="md:hidden" />
