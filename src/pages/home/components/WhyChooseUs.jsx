@@ -11,7 +11,7 @@ const WhyChooseUs = () => {
         <div className="container mx-auto px-4 flex flex-col md:flex-row items-center gap-12">
           <div className="md:w-1/2">
             <img
-              src="/about.png"
+              src="../../../../12.png"
               alt="About Xpanzia"
               className="w-full h-auto rounded-lg shadow-lg"
             />
