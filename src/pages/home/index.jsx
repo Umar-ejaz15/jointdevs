@@ -3,6 +3,8 @@ import Hero from "./components/Hero";
 import Servicies from "./components/Servicies";
 import About from "./components/About";
 import WhyChooseUs from "./components/WhyChooseUs";
+import VideoConsole from "./components/VideoConsole";
+import Footer from "./components/Footer";
 
 const Home = () => {
   return (
@@ -12,6 +14,8 @@ const Home = () => {
         <About/>
         <Servicies />
         <WhyChooseUs/>
+        <VideoConsole/>
+        <Footer/>
       </div>
     </>
   );
