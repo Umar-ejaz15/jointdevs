@@ -2,7 +2,7 @@ import React from "react";
 
 const VideoConsole = () => {
   return (
-    <div className="bg-black text-black  dark:text-white min-h-[40vh] flex items-center">
+    <div className="bg-white dark:bg-black text-black  dark:text-white min-h-[40vh] flex items-center">
       <div className="container mx-auto px-4 py-16 flex flex-col md:flex-row justify-center items-center gap-12">
         <div className="md:w-1/2">
           <h1 className="text-4xl md:text-7xl font-bold text-center md:text-left">
